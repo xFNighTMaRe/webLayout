@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body
+{
+    background: linear-gradient(45deg,orange,purple);
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.containForm
+{
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    height: 70vh;
+    width: 60vw;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+}
+
+    .containForm h2
+    {
+        margin-top: .6em;
+        font-size: 1.5em;
+        position: absolute;
+        left: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 5px solid purple;
+    }
+
+    .containForm .formInput
+    {
+        padding-bottom: 65px;
+    }
+    .containForm .formInput input[type="text"],
+    .containForm .formInput input[type="email"],
+    .containForm .formInput input[type="tel"],
+    .containForm .formInput input[type="submit"]
+    {
+        position:absolute;
+        left: 10%;
+        width: 80%;
+        padding: 10px;
+        margin-top: 5.6em;
+        border-radius:5px;
+        outline: none;
+        background: transparent;
+        box-sizing: border-box;
+    }
+    .containForm .formInput span
+    {
+        position:absolute;
+        left: 10%;
+        padding-left: 10px;
+        margin-top: 5.3em;
+        transition: .5s;
+        pointer-events: none;
+        
+    }
+    .containForm .formInput input:focus ~ span,
+    .containForm .formInput input:valid  ~ span
+
+    
+    {
+        transform: translate(-5px,-32px);
+    }
+    .containForm .formInput input[type="submit"]
+    {
+        max-width: 120px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        background: rgb(5, 130, 233);
+    }
+    .containForm .formInput input[type="submit"]:hover
+    {
+        background: purple;
+    }
+    .containForm .formInput input[type="checkbox"]
+    {
+        position: absolute;
+        top: 415px;
+        left: 10%;
+    }
+    .containForm .formInput:nth-child(6) label
+    {
+        position: relative;
+        margin-left: 12%;
+        top: 85px;
+    }
+    .containForm .formInput:nth-child(6) label a
+    {
+        color: black;
+    }

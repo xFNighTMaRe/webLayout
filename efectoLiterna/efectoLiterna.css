@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+/* font-family: 'Sansita Swashed', cursive; */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sansita Swashed', sans-serif;
+}
+.firstView
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.underView
+{
+    width: 100vw;
+    height: 100vh;
+}
+.overView
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    opacity: 0.1;
+}

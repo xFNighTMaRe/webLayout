@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="containForm">
+        <h2>Suscríbete a nuestra newsletter</h2>
+        <form>
+            <div class="formInput">
+                <input type="text" required="required">
+                <span>Introduce tu nombre</span>
+            </div>
+            <div class="formInput">
+                <input type="text" required="required">
+                <span>Primer apellido</span>
+            </div>
+            <div class="formInput">
+                <input type="text" required="required">
+                <span>Segundo apellido</span>
+            </div>
+            <div class="formInput">
+                <input type="email" required="required">
+                <span>Correo electrónico</span>
+            </div>
+            <div class="formInput">
+                <input type="tel" pattern="[0-9]{9}" required size="9-12">
+                <span>Móvil</span>
+            </div>
+            <div class="formInput">
+                <input type="checkbox" required="required">
+                <label><a target="_blank" href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">
+                    Acepto la política de privacidad</a>*</label>
+            </div>
+            <div class="formInput">
+                <input type="submit" value="Suscribirse">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

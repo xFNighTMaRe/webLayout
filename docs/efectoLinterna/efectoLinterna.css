@@ -26,18 +26,82 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
     opacity: 0.1;
     overflow: hidden;
+    animation: animate 5s linear infinite;
 }
 .ligth   /*Efecto de literna*/
 {
     position: fixed;
     background-color: transparent;
-    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.6) 20%);
+    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,.9) 40%);
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
     z-index: 10;
+}
+.ventanaNave
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('ventanaNave.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    z-index: 30;
+    animation: animate 5s linear infinite;
+}
+
+/* Animaciones con keyframes */
+
+@keyframes animate
+
+{
+10%
+    {
+        transform: translate(5px,0px);
+    }
+20%
+    {
+        transform: translate(0px,5px);
+    }
+30%
+    {
+        transform: translate(5px,5px);
+    }
+40%
+    {
+        transform: translate(5px,0px);
+    }
+50%
+    {
+        transform: translate(0px,5px);
+    }
+60%
+    {
+        transform: translate(0px,0px);
+    }
+70%
+    {
+        transform: translate(-5px,0px);
+    }
+80%
+    {
+        transform: translate(0px,-5px);
+    }
+90%
+    {
+        transform: translate(-5px,-5px);
+    }
+100%
+    {
+        transform: translate(0px,0px);
+    }
 }
